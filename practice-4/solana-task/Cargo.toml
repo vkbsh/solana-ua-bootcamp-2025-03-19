@@ -1,0 +1,25 @@
+[package]
+name = "solana-task"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "generate-keypair"
+path = "src/bin/generate-keypair.rs"
+
+[[bin]]
+name = "load-keypair"
+path = "src/bin/load-keypair.rs"
+
+[[bin]]
+name = "check-balance"
+path = "src/bin/check-balance.rs"
+
+[dependencies]
+anyhow = "1.0.97"
+bs58 = "0.5.1"
+dotenv = "0.15.0"
+solana-client = "2.2.6"
+solana-sdk = "2.2.2"
+tokio = "1.44.1"
+
